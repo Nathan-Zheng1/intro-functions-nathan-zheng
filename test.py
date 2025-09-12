@@ -81,28 +81,10 @@ elif temp == 68:
 else:
     print('cold') """
 
-values = [3]
-number = 3
-if number == (values):
-    print("odd")
-else:
-    print("even")
-
-def add(x, y):
-    return(x + y)
-bill = add(10,5)
-
-z = 15
-def service(bad):
-    if service == (bad):
-        return("0% tip")
-   """  if service == (okay):
-        return("10% tip")
-    if service == (good):
-        return("15% tip")
-    if service == (great)
-        return("25% tip") """
-bill = input("how much is the bill?")
-print(add(15, int(z)))
-print("how was the service?")
-print("bad")
+oddvalues = [1,3,5,7,9,11]
+number = 1
+x = (oddvalues)
+if number == oddvalues:
+ print("odd")
+else
+ print("even")
