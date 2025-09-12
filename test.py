@@ -81,10 +81,10 @@ elif temp == 68:
 else:
     print('cold') """
 
-oddvalues = [1,3,5,7,9,11]
-number = 1
-x = (oddvalues)
-if number == oddvalues:
- print("odd")
-else
- print("even")
+values = ["1","3"]
+x = 3
+if x == values:
+    print(f"{x} is odd")
+else:
+    print(f"{x} is even") 
+
