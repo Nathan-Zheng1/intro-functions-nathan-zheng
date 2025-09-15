@@ -81,10 +81,24 @@ elif temp == 68:
 else:
     print('cold') """
 
-values = ["1","3"]
-x = 3
-if x == values:
+""" user_input = input("Type message:") #counts letters in input
+print(len(user_input)) """
+""" 
+x = input("type a number")
+if x % 2 == 0:
     print(f"{x} is odd")
 else:
-    print(f"{x} is even") 
+    print(f"{x} is even") """
 
+bill_total = input("How much is the bill?")
+print(bill_total)
+service = ["bad","okay","good","great"]
+x = "bad"
+if x == "bad":
+    print(f"the service was bad, i will tip {bill_total * 0}")
+elif x == "okay":
+    print(f"the service was okay i will tip {bill_total * 0.15}")
+elif x == "good":
+    print(f"the service was good i will tip {bill_total * 0.2}")
+elif x == "great":
+    print(f"the service was great i will tip {bill_total * 0.25}")
