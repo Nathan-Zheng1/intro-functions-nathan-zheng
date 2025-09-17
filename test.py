@@ -1,4 +1,4 @@
-""" import turtle
+import turtle
 from turtle import *
 t = Turtle()
 
@@ -7,8 +7,6 @@ t.shape('turtle')
 
 t.speed(0)
 
-turtle.done()
- """
 # UNIT ONE
 """ def square(x):
     length = 5
@@ -34,9 +32,19 @@ turtle.done()
             t.left(90)
 square(4)  """
 
-""" def star(x)
+""" def star(x):
+    length = 5
+    for i in range(60):
+        t.left(5)
+        length += 5
+        for i in range(x):
+            t.forward(length)
+            t.left(144)
+star(5)
+ """
+# UNIT TWO
 
- x = 3
+""" x = 3
 y = float(3)
 print(x,y) """
 
@@ -90,15 +98,31 @@ if x % 2 == 0:
 else:
     print(f"{x} is even") """
 
-bill_total = input("How much is the bill?")
-print(bill_total)
+""" bill_total = input("How much is the bill?")
+print(f"{bill_total} dollars")
 service = ["bad","okay","good","great"]
-x = "bad"
+x = "okay"
 if x == "bad":
-    print(f"the service was bad, i will tip {bill_total * 0}")
+    print("the service was bad, i will tip 0%")
 elif x == "okay":
-    print(f"the service was okay i will tip {bill_total * 0.15}")
+    print("the service was okay, i will tip 15%")
 elif x == "good":
-    print(f"the service was good i will tip {bill_total * 0.2}")
+    print("the service was good, i will tip 20%")
 elif x == "great":
-    print(f"the service was great i will tip {bill_total * 0.25}")
+    print("the service was great, i will tip 25%") """
+
+""" user_input = input("Type number to find factor: ")
+if user_input % 2 == 0:
+if user_input is True:
+    print("True") 
+else:
+    print("False")
+"""
+turtle.done()
+
+def x( ):
+    for i in range(x + 1):
+        if i * i == x:
+            return(i)
+            print(i)
+x(10)
