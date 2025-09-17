@@ -1,4 +1,4 @@
-import turtle
+""" import turtle
 from turtle import *
 t = Turtle()
 
@@ -6,7 +6,7 @@ t = Turtle()
 t.shape('turtle')
 
 t.speed(0)
-
+ """
 # UNIT ONE
 """ def square(x):
     length = 5
@@ -91,13 +91,14 @@ else:
 
 """ user_input = input("Type message:") #counts letters in input
 print(len(user_input)) """
-""" 
-x = input("type a number")
-if x % 2 == 0:
-    print(f"{x} is odd")
-else:
-    print(f"{x} is even") """
 
+""" def user_input(x):   ODD / EVEN GENERATOR
+    if x % 2 == 0:
+        print(f"{x} is even")
+    else:
+        print(f"{x} is odd") 
+user_input(11)
+ """
 """ bill_total = input("How much is the bill?")
 print(f"{bill_total} dollars")
 service = ["bad","okay","good","great"]
@@ -109,20 +110,30 @@ elif x == "okay":
 elif x == "good":
     print("the service was good, i will tip 20%")
 elif x == "great":
-    print("the service was great, i will tip 25%") """
+    print("the service was great, i will tip 25%")  """
 
-""" user_input = input("Type number to find factor: ")
-if user_input % 2 == 0:
-if user_input is True:
-    print("True") 
-else:
-    print("False")
-"""
-turtle.done()
+def factors(x,y):
+    if x % y == 0:
+        print(f"{y} is a factor of {x}")
+    else:
+        print(f"{y} is not a factor of {x}")
+factors(25,5) 
 
-def x( ):
-    for i in range(x + 1):
-        if i * i == x:
-            return(i)
-            print(i)
-x(10)
+""" rideheight = True
+withparent = False
+HeathIssues = False
+def rider():
+    if (rideheight or withparent) and HeathIssues == False:
+        print("You are allowed to ride")
+    else:
+        print("You are not allowed to ride")
+rider() """
+
+""" dooropen = False
+windowopen = False
+def alarm():
+    if dooropen == False and windowopen == False:
+        print("Alarm is silent")
+    else:
+        print("Alarm is active")
+alarm() """
