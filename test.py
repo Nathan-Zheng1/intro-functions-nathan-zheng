@@ -5,8 +5,8 @@ t = Turtle()
 
 t.shape('turtle')
 
-t.speed(0)
- """
+t.speed(0) """
+ 
 # UNIT ONE
 """ def square(x):
     length = 5
@@ -41,7 +41,8 @@ square(4)  """
             t.forward(length)
             t.left(144)
 star(5)
- """
+
+t.done() """
 # UNIT TWO
 
 """ x = 3
@@ -112,13 +113,21 @@ elif x == "good":
 elif x == "great":
     print("the service was great, i will tip 25%")  """
 
-def factors(x,y):
+""" def factors(x,y):  #DETERMINES THE FACTORS OF X (Y)
     if x % y == 0:
         print(f"{y} is a factor of {x}")
     else:
         print(f"{y} is not a factor of {x}")
-factors(25,5) 
+factors(25,5)  """
 
+#Determines all factors of a number
+""" def user_input(x,y):  #y must be the greater value for loop to function properly
+    for i in range(1,y):
+        if (x and y) % i == 0 and i <= x:  #determines if both x and y can divide values of i, if so, the value of i is a factor of x AND y
+            print(f"{i} is a factor of {x} and {y}")
+user_input(9, 25) """
+
+#TRUE FALSE PROJECT
 """ rideheight = True
 withparent = False
 HeathIssues = False
@@ -137,3 +146,10 @@ def alarm():
     else:
         print("Alarm is active")
 alarm() """
+
+number = 2
+user_input = input("Guess a number between 1-10:")
+while user_input is not number:
+    input("Guess again!:")
+if user_input == number:
+    print("You guessed correctly")
