@@ -118,14 +118,14 @@ elif x == "great":
         print(f"{y} is a factor of {x}")
     else:
         print(f"{y} is not a factor of {x}")
-factors(25,5)  """
+factors(25,5) """
 
-#Determines all factors of a number
-""" def user_input(x,y):  #y must be the greater value for loop to function properly
+""" #Determines all factors of a number
+def user_input(x,y):  #y must be the greater value for loop to function properly
     for i in range(1,y):
-        if (x and y) % i == 0 and i <= x:  #determines if both x and y can divide values of i, if so, the value of i is a factor of x AND y
+        if x % i == 0 and y % i == 0:  #determines if both x and y can divide values of i, if so, the value of i is a factor of x AND y
             print(f"{i} is a factor of {x} and {y}")
-user_input(9, 25) """
+user_input(1, 30) """
 
 #TRUE FALSE PROJECT
 """ rideheight = True
@@ -147,9 +147,19 @@ def alarm():
         print("Alarm is active")
 alarm() """
 
-number = 2
+#number guessing game
+import random
+random_number = random.randint("1,10")
 user_input = input("Guess a number between 1-10:")
-while user_input is not number:
-    input("Guess again!:")
-if user_input == number:
+if user_input == random_number:
     print("You guessed correctly")
+else:
+    while user_input is not random_number:
+        """ if user_input < y:
+            print("Your answer is less than the number")
+        elif user_input > y:
+            print("Your answer is greater than the number") """
+        user_input = input("Guess again!:")
+        if user_input == random_number:
+            print(f"You got it right!")
+            break
