@@ -149,17 +149,16 @@ alarm() """
 
 #number guessing game
 import random
-random_number = random.randint("1,10")
+random_number = random.randint(1,10)
+print(random_number)
 user_input = input("Guess a number between 1-10:")
-if user_input == random_number:
-    print("You guessed correctly")
+user_input = int()
+if user_input is random_number:
+    print("You got it correct in 1 try!")
 else:
-    while user_input is not random_number:
-        """ if user_input < y:
-            print("Your answer is less than the number")
-        elif user_input > y:
-            print("Your answer is greater than the number") """
-        user_input = input("Guess again!:")
+    while user_input != random_number:
+        if user_input != random_number:
+            user_input = input("Your answer is incorrect, guess again!:")
         if user_input == random_number:
-            print(f"You got it right!")
+            print("You got it right!")
             break
