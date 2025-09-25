@@ -147,18 +147,27 @@ def alarm():
         print("Alarm is active")
 alarm() """
 
-#number guessing game
+""" #number guessing game
 import random
 random_number = random.randint(1,10)
-print(random_number)
-user_input = input("Guess a number between 1-10:")
-user_input = int()
-if user_input is random_number:
+user_input = input("Guess a random number!:")
+if user_input == random_number:
     print("You got it correct in 1 try!")
 else:
-    while user_input != random_number:
-        if user_input != random_number:
+    while user_input is not random_number:
+        if user_input is not random_number:
             user_input = input("Your answer is incorrect, guess again!:")
         if user_input == random_number:
             print("You got it right!")
-            break
+            break """
+
+#dictionary project
+dictionarys = ["The dictionary of all words",2,3,4]
+customer_input = input("What would you like to get?")
+Name_1 = "The dictionary of all words"
+Price_1 = "10"
+Color_1 = "Blue"
+if customer_input == "1":
+    customer_input = input(f"You would like to get {Name_1}?")
+    if customer_input == "Yes":
+        print(f"The dictionary is ${Price_1} and is Blue")
