@@ -162,12 +162,41 @@ else:
             break """
 
 #dictionary project
-dictionarys = ["The dictionary of all words",2,3,4]
-customer_input = input("What would you like to get?")
-Name_1 = "The dictionary of all words"
+dictionarys = ["Dictionary of empty space","Dictionary of value","Dictionary of worthlessness","Dictionary of riches"]
+customer_input = input(f"Would you like to get any of the following?: {dictionarys}")
+Name_1 = dictionarys[0]
 Price_1 = "10"
-Color_1 = "Blue"
+Color_1 = "White"
+Name_2 = dictionarys[1]
+Price_2 = "100"
+Color_2 = "Rainbow"
+Name_3 = dictionarys[2]
+Price_3 = "1"
+Color_3 = "Brown"
+Name_4 = dictionarys[3]
+Price_4 = "250"
+Color_4 = "Gold"
 if customer_input == "1":
-    customer_input = input(f"You would like to get {Name_1}?")
-    if customer_input == "Yes":
-        print(f"The dictionary is ${Price_1} and is Blue")
+    customer_input = input(f"Would you like to get {Name_1}?")
+    if customer_input == "yes":
+        print(f"The dictionary is ${Price_1} and is {Color_1}")
+    elif customer_input == "no":
+        customer_input = input("Alright, would you like to get something else than?")
+if customer_input == "2":
+    customer_input = input(f"Would you like to get {Name_2}?")
+    if customer_input == "yes":
+        print(f"The dictionary is ${Price_2} and is {Color_2}")
+    elif customer_input == "no":
+        customer_input = input("Alright, would you like to get something else than?")
+if customer_input == "3":
+    customer_input = input(f"Would you like to get {Name_3}?")
+    if customer_input == "yes":
+        print(f"The dictionary is ${Price_3} and is {Color_3}")
+    elif customer_input == "no":
+        customer_input = input("Alright, would you like to get something else than?")
+if customer_input == "4":
+    customer_input = input(f"Would you like to get {Name_4}?")
+    if customer_input == "yes":
+        print(f"The dictionary is ${Price_4} and is {Color_4}")
+    elif customer_input == "no":
+        customer_input = input("Alright, would you like to get something else than?")
