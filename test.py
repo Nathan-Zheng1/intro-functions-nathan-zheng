@@ -120,12 +120,12 @@ elif x == "great":
         print(f"{y} is not a factor of {x}")
 factors(25,5) """
 
-#Determines all factors of a number
+""" #Determines all factors of a number
 def user_input(x,y):  #y must be the greater value for loop to function properly
     for i in range(1,y):
         if x % i == 0 and y % i == 0:  #determines if both x and y can divide values of i, if so, the value of i is a factor of x AND y
             print(f"{i} is a factor of {x} and {y}")
-user_input(15, 30) 
+user_input(15, 30) """ 
 
 #TRUE FALSE PROJECT
 """ rideheight = True
@@ -201,39 +201,48 @@ if customer_input == "4":
     elif customer_input == "no":
         customer_input = input("Alright, would you like to get something else than?") """
 
-"""#dictionary project (Trial 2)
+#dictionary project (Trial 2)
 vast_shop = []
 items = [
 {
     "name" : "Mystery Block",
     "price" : 10,
-    "department" : "Risky",
-    "description" : "A mystery block that could contain all the necesities you need: money, coupons, and even a grand prize; a house! Are you willing to take a risk, for a chance at a brand new house?"}
-{,
+    "department" : "Mystery",
+    "description" : "A mystery block that could contain all the necesities you need: money, coupons, and even a grand prize; a house! Are you willing to take a risk, for a chance at a brand new house?"
+},
+{
     "name" : "Phone",
     "price" : 999,
     "department" : "Technology",
-    "description" : "A absolutely brain metlting device, for all your silly desires."}
-{, 
-    "name" : "PC"
+    "description" : "A absolutely brain metlting device, for all your silly desires."
+},
+{
+    "name" : "PC",
     "price" : 1999,
     "department" : "Technology",
-    "description" : "A super power of a device, capable of running all types of games, and the exclusive GPT+"}
-{,
+    "description" : "A super power of a device, capable of running all types of games, and the exclusive powerhouse: GPT+"
+},
+{
     "name" : "IPad",
     "price" : 1250,
     "department" : "Technology",
-    "description" : "The bane of all of time, the device that withholds true wisdom, yet such a addicting little device." }]
-for item in items():
-    print(item)
+    "description" : "The bane of all of time, the device that withholds true wisdom, yet such a addicting little device." 
+}
+]
+for index, item in enumerate(items):
+    print(index, ":" , item["name"])
 user_input = input("Would you like to get any of these devices?")
-if user_input == "yes":
-    user_input = input(f"Great! Which one of these would you like to get?: {item}") 
-    if user_input : items in item:
-        print(f"so you would like to get {item}?")
+if user_input == "0":
+    user_input = input(f"Are you sure you would like to get {items[0]["name"]}")
+    if user_input == "yes":
+        print(f"Great! Your total will be {items[0]["price"]} dollars")
+        user_input = input("Would you like to see the description and department?")
+    elif user_input == "no":
+        exit
         if user_input == "yes":
-            print{
-            "name"
-            "price"
-            "department"
-            "description"}"""
+            print(f"This item is part of the {items[0]["department"]} department, the description is shown as the following: {items[0]["description"]}")
+            user_input = input("Will you be paying with cash or card?")
+            if user_input == "cash":
+                print("Great! Pay here!...")
+            elif user_input == "card":
+                print("Alright! Scan here!")
