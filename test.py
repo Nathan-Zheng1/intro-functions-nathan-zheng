@@ -201,7 +201,7 @@ if customer_input == "4":
     elif customer_input == "no":
         customer_input = input("Alright, would you like to get something else than?") """
 
-#dictionary project (Trial 2)
+""" #dictionary project (Trial 2)
 vast_shop = []
 items = [
 {
@@ -270,4 +270,14 @@ if user_input == "no":
         print("Okay, scan over here.")
 if user_input == "yes":
     while user_input == "yes":
-        user_input = input("What else would you like to get?")
+        user_input = input("What else would you like to get?") """
+
+#Assessment Practice - English or French
+def user_input(N):
+    user_input = input("Write something now:")
+    x = (0)
+    y = (0)
+    for i in N(user_input):
+        user_input.split( )
+        print (user_input)
+user_input(user_input)
