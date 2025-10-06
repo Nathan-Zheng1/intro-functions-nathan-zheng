@@ -273,11 +273,21 @@ if user_input == "yes":
         user_input = input("What else would you like to get?") """
 
 #Assessment Practice - English or French
-def user_input(N):
-    user_input = input("Write something now:")
-    x = (0)
-    y = (0)
-    for i in N(user_input):
-        user_input.split( )
-        print (user_input)
-user_input(user_input)
+
+def language(N):
+    x = 0
+    y = 0
+    z = 0
+    for z in range(0, 100):
+        print(z) 
+    if N[z] == "S" or "s":
+            x + 1
+    if N[z] == "T" or "t":
+            y + 1 
+    if x > y:
+        print("English")
+    elif y > x:
+        print("French")
+    elif y == x:
+        print("It is probably French")
+language("The sock of the sorrowed man leems overhead")
