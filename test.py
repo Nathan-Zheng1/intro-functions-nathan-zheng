@@ -274,20 +274,30 @@ if user_input == "yes":
 
 #Assessment Practice - English or French
 
-def language(N):
-    x = 0
-    y = 0
-    z = 0
-    for z in range(0, 100):
-        print(z) 
-    if N[z] == "S" or "s":
-            x + 1
-    if N[z] == "T" or "t":
-            y + 1 
-    if x > y:
+""" def lang(x):
+    s = 0
+    t = 0
+    for char in x:
+        if char == "s" or char == "S":
+            s += 1
+        elif char == "t" or char == "T":
+            t += 1
+    if s > t:
         print("English")
-    elif y > x:
+    elif t > s:
         print("French")
-    elif y == x:
+    elif t == s:
         print("It is probably French")
-language("The sock of the sorrowed man leems overhead")
+lang("The smell of the smelly sock is unsanitable.") """
+
+def spaces(x,y):
+    C = 0
+    f = 0
+    for char in x:
+        if char == "C":
+            C += 1
+    for char in y:
+        if char == "C":
+            f += 1
+    print(f"There were {C + f} occupied spots total from today and tommorow. The rest were empty")
+spaces("C.CC.C","C.C.C.")
