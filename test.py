@@ -149,57 +149,28 @@ alarm() """
 
 """ #number guessing game
 import random
+x = random.randint(1,10)
+print(x)
+user_input = input("Guess a number")
+if user_input == x:
+    print("You got it right!")
+else:
+    user_input = input("Incorrect, guess again.") """
+
+#number guessing game
+import random
 random_number = random.randint(1,10)
+print(random_number)
 user_input = input("Guess a random number!:")
 if user_input == random_number:
     print("You got it correct in 1 try!")
 else:
     while user_input is not random_number:
-        if user_input is not random_number:
-            user_input = input("Your answer is incorrect, guess again!:")
+        user_input = input("Your answer is incorrect, guess again!:")
         if user_input == random_number:
             print("You got it right!")
-            break """
+            break
 
-#dictionary project (Trial 1)
-""" dictionarys = ["Dictionary of empty space","Dictionary of value","Dictionary of worthlessness","Dictionary of riches"]
-customer_input = input(f"Would you like to get any of the following?: {dictionarys}")
-Name_1 = dictionarys[0]
-Price_1 = "10"
-Color_1 = "White"
-Name_2 = dictionarys[1]
-Price_2 = "100"
-Color_2 = "Rainbow"
-Name_3 = dictionarys[2]
-Price_3 = "1"
-Color_3 = "Brown"
-Name_4 = dictionarys[3]
-Price_4 = "250"
-Color_4 = "Gold"
-if customer_input == "1":
-    customer_input = input(f"Would you like to get {Name_1}?")
-    if customer_input == "yes":
-        print(f"The dictionary is ${Price_1} and is {Color_1}")
-    elif customer_input == "no":
-        customer_input = input("Alright, would you like to get something else than?")
-if customer_input == "2":
-    customer_input = input(f"Would you like to get {Name_2}?")
-    if customer_input == "yes":
-        print(f"The dictionary is ${Price_2} and is {Color_2}")
-    elif customer_input == "no":
-        customer_input = input("Alright, would you like to get something else than?")
-if customer_input == "3":
-    customer_input = input(f"Would you like to get {Name_3}?")
-    if customer_input == "yes":
-        print(f"The dictionary is ${Price_3} and is {Color_3}")
-    elif customer_input == "no":
-        customer_input = input("Alright, would you like to get something else than?")
-if customer_input == "4":
-    customer_input = input(f"Would you like to get {Name_4}?")
-    if customer_input == "yes":
-        print(f"The dictionary is ${Price_4} and is {Color_4}")
-    elif customer_input == "no":
-        customer_input = input("Alright, would you like to get something else than?") """
 
 """ #dictionary project (Trial 2)
 vast_shop = []
@@ -272,7 +243,7 @@ if user_input == "yes":
     while user_input == "yes":
         user_input = input("What else would you like to get?") """
 
-#Assessment Practice - English or French
+#Assessment Practice - English or French / Occupied Spaces
 
 """ def lang(x):
     s = 0
@@ -290,7 +261,7 @@ if user_input == "yes":
         print("It is probably French")
 lang("The smell of the smelly sock is unsanitable.") """
 
-def spaces(x,y):
+""" def spaces(x,y):
     C = 0
     f = 0
     for char in x:
@@ -300,4 +271,4 @@ def spaces(x,y):
         if char == "C":
             f += 1
     print(f"There were {C + f} occupied spots total from today and tommorow. The rest were empty")
-spaces("C.CC.C","C.C.C.")
+spaces("C.CC.C","C.C.C.") """
