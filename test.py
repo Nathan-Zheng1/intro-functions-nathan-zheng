@@ -153,26 +153,14 @@ x = random.randint(1,10)
 print(x)
 user_input = input("Guess a number")
 if user_input == x:
-    print("You got it right!")
-else:
-    user_input = input("Incorrect, guess again.") """
-
-#number guessing game
-import random
-random_number = random.randint(1,10)
-print(random_number)
-user_input = input("Guess a random number!:")
-if user_input == random_number:
-    print("You got it correct in 1 try!")
-else:
-    while user_input is not random_number:
-        user_input = input("Your answer is incorrect, guess again!:")
-        if user_input == random_number:
-            print("You got it right!")
-            break
+print("You got it correct!")
+while user_input is not x:
+user_input = input("Incorrect, guess again.")
+if user_input == x:
+    print("You got it right!") """
 
 
-""" #dictionary project (Trial 2)
+#dictionary project (Trial 2)
 vast_shop = []
 items = [
 {
@@ -203,6 +191,7 @@ items = [
 print("Here are all the items we currently have in stock:")
 for index, item in enumerate(items):
     print(index, ":" , item["name"])
+    shopping_stage = 0
 user_input = input("Would you like to get any of these devices?")
 if user_input == "0":
     user_input = input(f"Are you sure you would like to get {items[0]["name"]}.")
@@ -240,10 +229,9 @@ if user_input == "no":
     elif user_input == "card":
         print("Okay, scan over here.")
 if user_input == "yes":
-    while user_input == "yes":
-        user_input = input("What else would you like to get?") """
+    shopping_stage = 0
 
-#Assessment Practice - English or French / Occupied Spaces
+#Assessment Practice - English or French / Occupied Spaces / Magnus HONI BLOCK
 
 """ def lang(x):
     s = 0
@@ -272,3 +260,26 @@ lang("The smell of the smelly sock is unsanitable.") """
             f += 1
     print(f"There were {C + f} occupied spots total from today and tommorow. The rest were empty")
 spaces("C.CC.C","C.C.C.") """
+
+""" def blocks(x):
+    h = 0
+    o = 0
+    n = 0
+    i = 0
+    matchletter = 0
+    for char in x:
+        if char == "H" and matchletter == 0:
+            h += 1
+            matchletter += 1
+        if char == "O" and matchletter == 1:
+            o += 1
+            matchletter += 1
+        if char == "N" and matchletter == 2:
+            n += 1
+            matchletter += 1
+        if char == "I" and matchletter == 3:
+            i += 1
+            matchletter -= 3
+    if h and o and n and i >= 1:
+        print(f"There is {i} honi blocks")
+blocks("HONIBBBHONIADJALDA") """
