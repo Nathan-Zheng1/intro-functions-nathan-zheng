@@ -300,10 +300,15 @@ movies = [
     "date" : 2002
 },
 {
-    "name" : "Galatic",
+    "name" : "Galactic",
     "genre" : "Action", 
     "date" : 2024
 }
 ]
 for index, item in enumerate(movies):
     print(index, ":", item["name"])
+    user_input = input("Here is our list of movies! Please insert a specific date and we will search for movies produced before/after that date! First of all, would you like to search for a movie before or after this date?")
+    if user_input == "before":
+        user_input = input("Okay, what year are you looking for?")
+        if item["date"] > user_input:
+            print (item["name"])
