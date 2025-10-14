@@ -161,7 +161,7 @@ if user_input == x:
 
 
 #dictionary project (Trial 2)
-vast_shop = []
+"""vast_shop = []
 items = [
 {
     "name" : "Mystery Block",
@@ -191,7 +191,6 @@ items = [
 print("Here are all the items we currently have in stock:")
 for index, item in enumerate(items):
     print(index, ":" , item["name"])
-    shopping_stage = 0
 user_input = input("Would you like to get any of these devices?")
 if user_input == "0":
     user_input = input(f"Are you sure you would like to get {items[0]["name"]}.")
@@ -227,9 +226,8 @@ if user_input == "no":
     if user_input == "cash":
         print("Okay, pay up here.")
     elif user_input == "card":
-        print("Okay, scan over here.")
-if user_input == "yes":
-    shopping_stage = 0
+        print("Okay, scan over here.")"""
+
 
 #Assessment Practice - English or French / Occupied Spaces / Magnus HONI BLOCK
 
@@ -283,3 +281,29 @@ spaces("C.CC.C","C.C.C.") """
     if h and o and n and i >= 1:
         print(f"There is {i} honi blocks")
 blocks("HONIBBBHONIADJALDA") """
+
+#Movie database project
+movies = [
+{
+    "name" : "The Bees Adventure",
+    "genre" : "Adventure",
+    "date" : 2019
+},
+{
+    "name" : "The Reaper's Stories",
+    "genre" : "Horror",
+    "date" : 1998
+},
+{
+    "name" : "Jokes n' Smoke",
+    "genre" : "Comedy",
+    "date" : 2002
+},
+{
+    "name" : "Galatic",
+    "genre" : "Action", 
+    "date" : 2024
+}
+]
+for index, item in enumerate(movies):
+    print(index, ":", item["name"])
