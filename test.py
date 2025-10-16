@@ -147,18 +147,21 @@ def alarm():
         print("Alarm is active")
 alarm() """
 
-""" #number guessing game
+#number guessing game
 import random
 x = random.randint(1,10)
-print(x)
 user_input = input("Guess a number")
 if user_input == x:
-print("You got it correct!")
+    print("You got it correct!")
 while user_input is not x:
-user_input = input("Incorrect, guess again.")
-if user_input == x:
-    print("You got it right!") """
-
+    user_input = int
+    if user_input > x:
+        print("Your number in greater than the number")
+    if user_input < x:
+        print("Your number in less than the number")
+    user_input = input("Incorrect, guess again.")
+    if user_input == x:
+        print("You got it right!")
 
 #dictionary project (Trial 2)
 """vast_shop = []
@@ -282,8 +285,8 @@ spaces("C.CC.C","C.C.C.") """
         print(f"There is {i} honi blocks")
 blocks("HONIBBBHONIADJALDA") """
 
-#Movie database project
-movies = [
+""" #Movie database project
+items = [
 {
     "name" : "The Bees Adventure",
     "genre" : "Adventure",
@@ -305,10 +308,11 @@ movies = [
     "date" : 2024
 }
 ]
-for index, item in enumerate(movies):
-    print(index, ":", item["name"])
+for index, item in enumerate(items):
+    print(index, ":" , item["name"])
     user_input = input("Here is our list of movies! Please insert a specific date and we will search for movies produced before/after that date! First of all, would you like to search for a movie before or after this date?")
     if user_input == "before":
-        user_input = input("Okay, what year are you looking for?")
-        if item["date"] > user_input:
-            print (item["name"])
+        for i in range(1, 2020):    #requested date must be entered here
+            if item["date"] == i:
+                print(item["name"])
+                user_input = input("Are any of these movies the one you are searching for? If so, please type its title word for word:") """
