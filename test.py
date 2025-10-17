@@ -147,7 +147,7 @@ def alarm():
         print("Alarm is active")
 alarm() """
 
-#number guessing game
+""" #number guessing game
 import random
 x = random.randint(1,10)
 user_input = input("Guess a number")
@@ -161,10 +161,22 @@ while user_input is not x:
         print("Your number in less than the number")
     user_input = input("Incorrect, guess again.")
     if user_input == x:
-        print("You got it right!")
+        print("You got it right!") """
+#number guessing game (Trial 2)
+""" import random
+def number(x):
+    user_input = input("Guess a random number:")
+    if user_input == x:
+        print("You guessed the number!")
+    elif user_input is not x:
+        while user_input is not x:
+            user_input = input("Guess again")
+            if user_input == x:
+                print("You gussed right!")
+number(random.randint(1,10)) """
 
-#dictionary project (Trial 2)
-"""vast_shop = []
+""" #dictionary project (Trial 2)
+vast_shop = []
 items = [
 {
     "name" : "Mystery Block",
@@ -191,6 +203,7 @@ items = [
     "description" : "The bane of all of time, the device that withholds true wisdom, yet such a addicting little device." 
 }
 ]
+total = 0
 print("Here are all the items we currently have in stock:")
 for index, item in enumerate(items):
     print(index, ":" , item["name"])
@@ -199,6 +212,7 @@ if user_input == "0":
     user_input = input(f"Are you sure you would like to get {items[0]["name"]}.")
     if user_input == "yes":
         print(f"Great! Your total will be {items[0]["price"]} dollars.")
+        total += 10
         user_input = input("Would you like to see the description and department?")
         if user_input == "yes":
             print(f"This item is part of the {items[0]["department"]} department, the description is shown as the following: {items[0]["description"]}")
@@ -206,6 +220,7 @@ if user_input == "1":
     user_input = input(f"Are you sure you would like to get {items[1]["name"]}.")
     if user_input == "yes":
         print(f"Great! Your total will be {items[1]["price"]} dollars.")
+        total += 999
         user_input = input("Would you like to see the description and department?")
         if user_input == "yes":
             print(f"This item is part of the {items[1]["department"]} department, the description is shown as the following: {items[1]["description"]}")
@@ -213,6 +228,7 @@ if user_input == "2":
     user_input = input(f"Are you sure you would like to get {items[2]["name"]}.")
     if user_input == "yes":
         print(f"Great! Your total will be {items[2]["price"]} dollars.")
+        total += 1999
         user_input = input("Would you like to see the description and department?")
         if user_input == "yes":
             print(f"This item is part of the {items[2]["department"]} department, the description is shown as the following: {items[2]["description"]}")
@@ -220,18 +236,101 @@ if user_input == "3":
     user_input = input(f"Are you sure you would like to get {items[3]["name"]}.")
     if user_input == "yes":
         print(f"Great! Your total will be {items[3]["price"]} dollars.")
+        total += 1250
         user_input = input("Would you like to see the description and department?")
         if user_input == "yes":
             print(f"This item is part of the {items[3]["department"]} department, the description is shown as the following: {items[3]["description"]}")
 user_input = input("Would you like to continue shopping?")
 if user_input == "no":
-    user_input == input("Alright! Will you be paying with cash or card?")
-    if user_input == "cash":
-        print("Okay, pay up here.")
-    elif user_input == "card":
-        print("Okay, scan over here.")"""
-
-
+    user_input == input(f"Alright! Your total is ${total} Will you be paying with cash or card?")
+if user_input == "cash":
+    print("Okay, pay up here.")
+elif user_input == "card":
+    print("Okay, scan over here.")
+elif user_input == "yes":
+    for index, item in enumerate(items):
+        print(index, ":" , item["name"])
+user_input = input("Would you like to get any of these devices?")
+if user_input == "0":
+    user_input = input(f"Are you sure you would like to get {items[0]["name"]}.")
+    if user_input == "yes":
+        print(f"Great! Your total will be {items[0]["price"]} dollars.")
+        total += 10
+        user_input = input("Would you like to see the description and department?")
+        if user_input == "yes":
+            print(f"This item is part of the {items[0]["department"]} department, the description is shown as the following: {items[0]["description"]}")
+if user_input == "1":
+    user_input = input(f"Are you sure you would like to get {items[1]["name"]}.")
+    if user_input == "yes":
+        print(f"Great! Your total will be {items[1]["price"]} dollars.")
+        total += 999
+        user_input = input("Would you like to see the description and department?")
+        if user_input == "yes":
+            print(f"This item is part of the {items[1]["department"]} department, the description is shown as the following: {items[1]["description"]}")
+if user_input == "2":
+    user_input = input(f"Are you sure you would like to get {items[2]["name"]}.")
+    if user_input == "yes":
+        print(f"Great! Your total will be {items[2]["price"]} dollars.")
+        total += 1999
+        user_input = input("Would you like to see the description and department?")
+        if user_input == "yes":
+            print(f"This item is part of the {items[2]["department"]} department, the description is shown as the following: {items[2]["description"]}")
+if user_input == "3":
+    user_input = input(f"Are you sure you would like to get {items[3]["name"]}.")
+    if user_input == "yes":
+        print(f"Great! Your total will be {items[3]["price"]} dollars.")
+        total += 1250
+        user_input = input("Would you like to see the description and department?")
+        if user_input == "yes":
+            print(f"This item is part of the {items[3]["department"]} department, the description is shown as the following: {items[3]["description"]}")
+user_input = input("Would you like to continue shopping?")
+if user_input == "no":
+    user_input == input(f"Alright! Your total is ${total} Will you be paying with cash or card?")
+if user_input == "cash":
+    print("Okay, pay up here.")
+elif user_input == "card":
+    print("Okay, scan over here.")
+elif user_input == "yes":
+    for index, item in enumerate(items):
+        print(index, ":" , item["name"])
+user_input = input("Would you like to get any of these devices?")
+if user_input == "0":
+    user_input = input(f"Are you sure you would like to get {items[0]["name"]}.")
+    if user_input == "yes":
+        print(f"Great! Your total will be {items[0]["price"]} dollars.")
+        total += 10.0
+        user_input = input("Would you like to see the description and department?")
+        if user_input == "yes":
+            print(f"This item is part of the {items[0]["department"]} department, the description is shown as the following: {items[0]["description"]}")
+if user_input == "1":
+    user_input = input(f"Are you sure you would like to get {items[1]["name"]}.")
+    if user_input == "yes":
+        print(f"Great! Your total will be {items[1]["price"]} dollars.")
+        total += 999.0
+        user_input = input("Would you like to see the description and department?")
+        if user_input == "yes":
+            print(f"This item is part of the {items[1]["department"]} department, the description is shown as the following: {items[1]["description"]}")
+if user_input == "2":
+    user_input = input(f"Are you sure you would like to get {items[2]["name"]}.")
+    if user_input == "yes":
+        print(f"Great! Your total will be {items[2]["price"]} dollars.")
+        total += 1999.0
+        user_input = input("Would you like to see the description and department?")
+        if user_input == "yes":
+            print(f"This item is part of the {items[2]["department"]} department, the description is shown as the following: {items[2]["description"]}")
+if user_input == "3":
+    user_input = input(f"Are you sure you would like to get {items[3]["name"]}.")
+    if user_input == "yes":
+        print(f"Great! Your total will be {items[3]["price"]} dollars.")
+        total += 1250.0
+        user_input = input("Would you like to see the description and department?")
+        if user_input == "yes":
+            print(f"This item is part of the {items[3]["department"]} department, the description is shown as the following: {items[3]["description"]}")
+user_input = input(f"Your cart is at the max limit of three, your total is ${total}, would you like to play with cash or card?")
+if user_input == "cash":
+    print("Great! Pay here.")
+elif user_input == "card": 
+    print("Alright! Scan here.")"""
 #Assessment Practice - English or French / Occupied Spaces / Magnus HONI BLOCK
 
 """ def lang(x):
@@ -285,8 +384,9 @@ spaces("C.CC.C","C.C.C.") """
         print(f"There is {i} honi blocks")
 blocks("HONIBBBHONIADJALDA") """
 
-""" #Movie database project
-items = [
+#Movie database project
+vast_shop = []
+movies = [
 {
     "name" : "The Bees Adventure",
     "genre" : "Adventure",
@@ -308,11 +408,11 @@ items = [
     "date" : 2024
 }
 ]
-for index, item in enumerate(items):
+for index, item in enumerate(movies):
     print(index, ":" , item["name"])
-    user_input = input("Here is our list of movies! Please insert a specific date and we will search for movies produced before/after that date! First of all, would you like to search for a movie before or after this date?")
-    if user_input == "before":
-        for i in range(1, 2020):    #requested date must be entered here
-            if item["date"] == i:
-                print(item["name"])
-                user_input = input("Are any of these movies the one you are searching for? If so, please type its title word for word:") """
+user_input = input("Here is our list of movies! Please enter one of the following variables and we will search for it: genre, name, or date")
+if user_input == "date":
+    for i in item["date"]:
+        print(i)
+elif user_input == "name":
+elif user_input == "genre":
