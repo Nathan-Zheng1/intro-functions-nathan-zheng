@@ -411,8 +411,18 @@ movies = [
 for index, item in enumerate(movies):
     print(index, ":" , item["name"])
 user_input = input("Here is our list of movies! Please enter one of the following variables and we will search for it: genre, name, or date")
+if user_input == "genre":
+    user_input = input("What genre are you looking for?")
+    if user_input == "comedy":
+        for index, item in enumerate(movies):
+            if item["genre"] == "Comedy":
+                print(f"All the movies listed fall under the genre of comedy: {item["name"]}")
+                user_input = input("Are any of these movies the one you are looking for? If so, please type its title word for word.")
+                for index, item in enumerate(movies):
+                    if item["name"] == user_input:
+                        print(f"{item["name"]} was made in {item["date"]}, and falls under the {item["genre"]} genre")
 if user_input == "date":
-    for i in item["date"]:
-        print(i)
-elif user_input == "name":
-elif user_input == "genre":
+    user_input = input("Please enter a year you would like to look for:")
+    for index, item in enumerate(movies):
+        if item["date"] is user_input:
+            print(f"These movies were created on {user_input}: {item["name"]}")
