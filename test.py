@@ -384,28 +384,27 @@ spaces("C.CC.C","C.C.C.") """
         print(f"There is {i} honi blocks")
 blocks("HONIBBBHONIADJALDA") """
 
-""" #Movie database project
-vast_shop = []
+#Movie database project
 movies = [
 {
     "name" : "The Bees Adventure",
     "genre" : "Adventure",
-    "date" : 2019
+    "date" : "2019"
 },
 {
     "name" : "The Reaper's Stories",
     "genre" : "Horror",
-    "date" : 1998
+    "date" : "1998"
 },
 {
     "name" : "Jokes n' Smoke",
     "genre" : "Comedy",
-    "date" : 2002
+    "date" : "2002"
 },
 {
     "name" : "Galactic",
     "genre" : "Action", 
-    "date" : 2024
+    "date" : "2024"
 }
 ]
 for index, item in enumerate(movies):
@@ -425,6 +424,6 @@ if user_input == "date":
     user_input = input("Please enter a year you would like to look for:")
     for index, item in enumerate(movies):
         if item["date"] == user_input:
-            print(f"These movies were created on {user_input}: {item["name"]}") """
-for i in range(0,23):
-    print(i)
+            print(f"These movies were created on {user_input}: {item["name"]}")
+        if item["date"] > user_input:
+            print(f"These movies were created before {user_input}: {item["name"]}")
