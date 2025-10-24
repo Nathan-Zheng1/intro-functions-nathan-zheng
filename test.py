@@ -384,7 +384,7 @@ spaces("C.CC.C","C.C.C.") """
         print(f"There is {i} honi blocks")
 blocks("HONIBBBHONIADJALDA") """
 
-#Movie database project
+""" #Movie database project
 vast_shop = []
 movies = [
 {
@@ -424,5 +424,7 @@ if user_input == "genre":
 if user_input == "date":
     user_input = input("Please enter a year you would like to look for:")
     for index, item in enumerate(movies):
-        if item["date"] is user_input:
-            print(f"These movies were created on {user_input}: {item["name"]}")
+        if item["date"] == user_input:
+            print(f"These movies were created on {user_input}: {item["name"]}") """
+for i in range(0,23):
+    print(i)
